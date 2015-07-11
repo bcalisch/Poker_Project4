@@ -80,7 +80,7 @@ public class Table {
 //    if(winner != null) {
 //            System.out.println("The winner is " + winner.getName() + " with a " + winner.getHand().getHandRankString()+ ": " + winner.getHand().getHighCard1() + ": " + winner.getHand().getHighCard2());
         ArrayList<Player> copyPlayer = cloneArrayList(players);
-        Collections.sort(copyPlayer, new Player.PlayerComparator());
+        Collections.sort(copyPlayer, new PlayerComparator());
          Player winner = players.get(players.indexOf(copyPlayer.get(0)));
 
         System.out.println("The winner is " + copyPlayer.get(0).getName() + " with a " + copyPlayer.get(0).getHand().getHandRankString() + ": " + copyPlayer.get(0).getHand().getHighCard1() + ": " + copyPlayer.get(0).getHand().getHighCard2());
